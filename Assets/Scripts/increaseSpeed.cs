@@ -17,8 +17,8 @@ public class increaseSpeed : MonoBehaviour
     }
 
     private IEnumerator SpeedBoost(){
-        player.speed=4f;
-        yield return new WaitForSeconds(0.3f);
-        player.speed=2f;
+        player.speed=5f;
+        yield return new WaitForSeconds(0.6f);
+        player.speed=3f;
     }
 }

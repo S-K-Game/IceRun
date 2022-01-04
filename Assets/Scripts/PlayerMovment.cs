@@ -74,7 +74,7 @@ public class PlayerMovment : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.tag == triggeringTag) {
-            speed=2f;
+            speed=3f;
             rb.constraints = RigidbodyConstraints2D.None;
         }
         
@@ -121,16 +121,16 @@ public class PlayerMovment : MonoBehaviour
 
     private IEnumerator SpeedBoost(){
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        speed=5f;
+        speed=4f;
         yield return new WaitForSeconds(3f);
-        speed=2f;
+        speed=3f;
         rb.constraints = RigidbodyConstraints2D.None;
     }
     private IEnumerator waitSome(){
         isJummping = true;
-        speed = 3f;
+        speed = 4f;
         yield return new WaitForSeconds(1f);
-        speed = 2f;
+        speed = 3f;
         isJummping=false;
     }
 
