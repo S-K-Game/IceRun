@@ -40,5 +40,5 @@ The main border is the route on which the player walks, in addition there is the
 
 ---
 - ## If you want to play press [here](https://s-k-games.itch.io/icerun)
-- - ## to watch the trailer press [here](https://www.youtube.com/watch?v=8AYw9JBX2zw)
+- ## to watch the trailer press [here](https://www.youtube.com/watch?v=8AYw9JBX2zw)
 - # Enjoy!! 
