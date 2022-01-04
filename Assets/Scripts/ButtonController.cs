@@ -10,4 +10,5 @@ public class ButtonController : MonoBehaviour
     public void NextScene(){
         SceneManager.LoadScene(sceneName);
     }
+
 }
