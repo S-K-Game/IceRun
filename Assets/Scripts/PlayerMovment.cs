@@ -22,6 +22,7 @@ public class PlayerMovment : MonoBehaviour
     public bool isSlide=false;
     public bool isJummping=false;
     public bool dead=false;
+    public bool boom=false;
     private int currentCol;
     private ColdBar coldBar;
     private int maxCold = 200 ;
@@ -49,7 +50,7 @@ public class PlayerMovment : MonoBehaviour
 
           
         
-        if(!onPlatform && !dead)
+        if(!onPlatform && !dead && !boom)
         {
             rb.velocity = new Vector2(speed, rb.velocity.y);
             if(timePass){

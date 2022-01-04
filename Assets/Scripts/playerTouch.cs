@@ -23,6 +23,7 @@ public class playerTouch : MonoBehaviour
     {
         if(collision.gameObject.tag=="boom" && enabled)
         {
+                pm.boom = true;
                 animator.SetBool("boom", true);
                 Destroy(collision.gameObject);
                 StartCoroutine(dead());      
@@ -43,6 +44,7 @@ public class playerTouch : MonoBehaviour
         GetComponent<PlayerMovment>().dead = false;
         pm.speed = 2;
         animator.SetBool("boom", false);
+        pm.boom =false;
     }
 
 }

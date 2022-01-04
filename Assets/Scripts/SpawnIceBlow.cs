@@ -20,9 +20,9 @@ public class SpawnIceBlow : MonoBehaviour
        yield return new WaitForSeconds(4f);
        while(true)
        {
-            Vector3 postospawn = new Vector3(Random.Range(player.position.x+0.5f, player.position.x+1f), Random.Range(player.position.y, player.position.y+0.1f), 0);
+            Vector3 postospawn = new Vector3(Random.Range(player.position.x+0.5f, player.position.x+1f), Random.Range(player.position.y, player.position.y+0.08f), 0);
             GameObject new_powerUp = Instantiate(_powerUpPrefabs, postospawn, Quaternion.identity);
-            yield return new WaitForSeconds(Random.Range(5f,12f));
+            yield return new WaitForSeconds(Random.Range(8f,20f));
        }
    }
 
