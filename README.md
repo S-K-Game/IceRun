@@ -36,4 +36,8 @@ The main border is the route on which the player walks, in addition there is the
 
 - ### _In order for the player to understand how to play the game we built the game in this way:_
 - - There is a detailed screen explaining the game
-- - There is also an experience game that is actually a short and not difficult track that he can practice before the challenging track.
+- - There is also an experience game that is actually a short and not difficult track that he can practice before the challenging track._
+
+---
+- ## If you want to play press [here](https://s-k-games.itch.io/icerun)
+- Enjoy!! 
