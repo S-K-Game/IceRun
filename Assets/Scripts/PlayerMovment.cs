@@ -84,13 +84,13 @@ public class PlayerMovment : MonoBehaviour
 
     private void AnimationUpdater(){
         string StateName="";
-        if(Input.GetKey(KeyCode.UpArrow) && !isJummping){
+        if((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))&& !isJummping){
             
             rb.AddForce(new Vector2(0, 1f));
             offJump();
             StateName="jump";
         }
-        if(Input.GetKeyDown(KeyCode.DownArrow)){
+        if(Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)){
             offSlide();
             StateName="slide";
             
